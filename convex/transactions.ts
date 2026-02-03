@@ -25,12 +25,14 @@ export const list = query({
       transactions.map(async (txn) => {
         const customer = await ctx.db.get(txn.customerId);
         const merchant = await ctx.db.get(txn.merchantId);
+        const store = await ctx.db.get(txn.storeId);
         return {
           ...txn,
           customerName: customer
             ? `${customer.firstName} ${customer.lastName}`
             : "Unknown",
           merchantName: merchant?.businessName ?? "Unknown",
+          storeName: store?.name ?? "Unknown",
         };
       })
     );
