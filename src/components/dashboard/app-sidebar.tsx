@@ -31,6 +31,10 @@ import {
   UserCheck,
   Award,
   Handshake,
+  QrCode,
+  User,
+  Star,
+  DollarSign,
   type LucideIcon,
 } from "lucide-react";
 import { portalNav } from "@/lib/navigation";
@@ -54,6 +58,10 @@ const iconMap: Record<string, LucideIcon> = {
   UserCheck,
   Award,
   Handshake,
+  QrCode,
+  User,
+  Star,
+  DollarSign,
 };
 
 function detectPortal(pathname: string): Role {
