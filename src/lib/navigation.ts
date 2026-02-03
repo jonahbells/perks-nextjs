@@ -30,7 +30,8 @@ export const portalNav: Record<Role, { label: string; color: string; items: NavI
       { title: "Stores", href: "/merchant/stores", icon: "Store" },
       { title: "Products", href: "/merchant/products", icon: "Package" },
       { title: "Transactions", href: "/merchant/transactions", icon: "ArrowLeftRight" },
-      { title: "Customers", href: "/merchant/customers", icon: "Users" },
+      { title: "QR Code", href: "/merchant/qr-code", icon: "QrCode" },
+      { title: "Profile", href: "/merchant/profile", icon: "User" },
     ],
   },
   agent: {
@@ -38,9 +39,10 @@ export const portalNav: Record<Role, { label: string; color: string; items: NavI
     color: "text-green-500",
     items: [
       { title: "Dashboard", href: "/agent", icon: "LayoutDashboard" },
+      { title: "Customers", href: "/agent/customers", icon: "Users" },
       { title: "Referrals", href: "/agent/referrals", icon: "UserPlus" },
       { title: "Commissions", href: "/agent/commissions", icon: "Wallet" },
-      { title: "Merchants", href: "/agent/merchants", icon: "Store" },
+      { title: "Profile", href: "/agent/profile", icon: "User" },
     ],
   },
   ambassador: {
@@ -49,8 +51,10 @@ export const portalNav: Record<Role, { label: string; color: string; items: NavI
     items: [
       { title: "Dashboard", href: "/ambassador", icon: "LayoutDashboard" },
       { title: "Referrals", href: "/ambassador/referrals", icon: "UserPlus" },
-      { title: "Earnings", href: "/ambassador/earnings", icon: "Wallet" },
-      { title: "Leaderboard", href: "/ambassador/leaderboard", icon: "Trophy" },
+      { title: "Customers", href: "/ambassador/customers", icon: "Users" },
+      { title: "Points", href: "/ambassador/points", icon: "Star" },
+      { title: "QR Code", href: "/ambassador/qr-code", icon: "QrCode" },
+      { title: "Profile", href: "/ambassador/profile", icon: "User" },
     ],
   },
   partner: {
@@ -58,9 +62,10 @@ export const portalNav: Record<Role, { label: string; color: string; items: NavI
     color: "text-orange-500",
     items: [
       { title: "Dashboard", href: "/partner", icon: "LayoutDashboard" },
-      { title: "Revenue", href: "/partner/revenue", icon: "TrendingUp" },
-      { title: "Reports", href: "/partner/reports", icon: "FileText" },
-      { title: "Integration", href: "/partner/integration", icon: "Plug" },
+      { title: "Customers", href: "/partner/customers", icon: "Users" },
+      { title: "Revenue", href: "/partner/points", icon: "DollarSign" },
+      { title: "QR Code", href: "/partner/qr-code", icon: "QrCode" },
+      { title: "Profile", href: "/partner/profile", icon: "User" },
     ],
   },
 };
